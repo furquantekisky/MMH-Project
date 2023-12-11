@@ -1,0 +1,13 @@
+users
+POST ==> localhost:5050/users/create
+{
+  "firstName" : "sayyed" , 
+  "lastName" : "afraaz", 
+  "mobileNumber" : "98500" ,
+  "email" : "afraaz@gmail.com", 
+  "setPassword" : "123"
+}
+
+
+GET ==> localhost:5050/users/show
+ 
