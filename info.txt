@@ -9,4 +9,4 @@ POST ==> localhost:5050/users/create
 }
 
 
-GET ==> localhost:5050/users/show
+GET ==> localhost:5050/users/getuser
