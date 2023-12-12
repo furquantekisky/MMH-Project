@@ -1,7 +1,8 @@
 import express  from "express";
 import dotenv from 'dotenv';
-import connectDB from "./db/connectDB.js";
-import userRouter from "./routes/userRoute.js";
+import cors from 'cors';
+import connectDB from "../backend/db/connectDB.js";
+import patientRouter from '../backend/routes/patientRoute.js'
 
 
 
@@ -11,10 +12,11 @@ const PORT = process.env.PORT || 5000
 
 //Express Middlewares
 app.use(express.json());
+app.use(cors())
 
 
 //Routes
-app.use('/users',userRouter)
+app.use('/patient',patientRouter)
 
 
 //connection of mongodb
