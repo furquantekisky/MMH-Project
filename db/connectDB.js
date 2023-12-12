@@ -8,7 +8,7 @@ const connectDB = ()=>{
     mongoose.connect(MONGO_URL).then(()=>{
         console.log(`Connected to Database Successfully...`);
     }).catch((err)=>{
-        console.log('Error connecting to MongoDB');
+        console.log('Error connecting to MongoDB'); 
     })
 }
 

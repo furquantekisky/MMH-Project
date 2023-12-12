@@ -10,3 +10,6 @@ POST ==> localhost:5050/users/create
 
 
 GET ==> localhost:5050/users/getuser
+
+
+GET ==> http://13.126.14.109:5050/patient/getpatient

@@ -3,9 +3,12 @@ import dotenv from 'dotenv';
 import cors from 'cors';
 import connectDB from "./db/connectDB.js";
 import patientRouter from './routes/patientRoute.js'
+import morgan from "morgan";
 
 //connection of mongodb
 connectDB()
+
+morgan('tiny')
 
 dotenv.config()
 const app = express();
