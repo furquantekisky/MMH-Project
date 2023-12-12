@@ -1,8 +1,8 @@
 import express  from "express";
 import dotenv from 'dotenv';
 import cors from 'cors';
-import connectDB from "../backend/db/connectDB.js";
-import patientRouter from '../backend/routes/patientRoute.js'
+import connectDB from "./db/connectDB.js";
+import patientRouter from './routes/patientRoute.js'
 
 //connection of mongodb
 connectDB()
