@@ -5,7 +5,7 @@ import status from 'http-status'
 export const getPatient = async (req, res) => {
     try {
         const result = await PatientModel.find()
-        console.log(result);
+        // console.log(result);
 
         if (!result) return res.status(404).json({
             success: false,

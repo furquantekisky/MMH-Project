@@ -8,8 +8,6 @@ import morgan from "morgan";
 //connection of mongodb
 connectDB()
 
-morgan('tiny')
-
 dotenv.config()
 const app = express();
 const PORT = process.env.PORT || 5000
@@ -17,6 +15,7 @@ const PORT = process.env.PORT || 5000
 //Express Middlewares
 app.use(express.json());
 app.use(cors())
+app.use(morgan('tiny'))
 
 
 //Routes
